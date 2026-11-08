@@ -22,8 +22,10 @@ void main() {
     await tester.pumpWidget(const Lab04());
     await tester.tap(find.text('Cheese Pizza'));
     await tester.pumpAndSettle();
+
     await tester.pageBack();
     await tester.pumpAndSettle();
+
     expect(find.text('Android ATC Pizza Place'), findsOneWidget);
   });
 }
