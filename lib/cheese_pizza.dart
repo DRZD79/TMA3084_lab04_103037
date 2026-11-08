@@ -18,6 +18,12 @@ class CheesePizzaScreen extends StatelessWidget {
               'Cheese Pizza is a pizza topped with '
               'melted mozzarella cheese.',
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, 'summary');
+              },
+              child: const Text('Order Now'),
+            ),
           ],
         ),
       ),

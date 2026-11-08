@@ -18,6 +18,12 @@ class FriesScreen extends StatelessWidget {
               'Box of Fries is a serving of crispy '
               'golden potato fries.',
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, 'summary');
+              },
+              child: const Text('Order Now'),
+            ),
           ],
         ),
       ),
